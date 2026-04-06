@@ -29,7 +29,7 @@ Modelos matemáticos y simulación de procesos sobre redes.
 
 ---
 
-## 🛠️ Requisitos e Instalación
+## 🛠️ Requisitos
 
 Para poder ejecutar estos scripts, necesitarás:
 * **MATLAB** (Se recomienda una versión reciente).
