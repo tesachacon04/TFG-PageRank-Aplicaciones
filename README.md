@@ -1,36 +1,24 @@
-# TFG-PageRank-Aplicaciones
-Código y datos del Trabajo de Fin de Grado en Matemáticas: Aplicaciones del algoritmo PageRank al circuito de tenis ATP y a la red de carriles bici de Sevilla.
+# Aplicaciones del Algoritmo PageRank: Tenis ATP y Red de Carriles Bici
 
-## 📂 Estructura del Proyecto
+Este repositorio contiene el soporte computacional de mi **Trabajo de Fin de Grado en Matemáticas**. El objetivo es explorar cómo el algoritmo PageRank, diseñado originalmente para ordenar la web, puede aplicarse para analizar la jerarquía en el deporte profesional y la eficiencia en redes de transporte urbano.
 
-He organizado los archivos según el área de estudio para facilitar su comprensión:
+## 📂 Estructura del Código
 
-### 🎾 1. Análisis del Ranking ATP (Tenis)
-Estudio y ordenación de jugadores utilizando estructuras de grafos y métodos de centralidad.
-* `grafo_atp.m`: Construye la red de enfrentamientos y jugadores a partir de los datos de la ATP.
-* `atp_ranking_analysis.m`: Script principal para analizar el ranking de tenis.
-* `atp_ranking_analysisponderado.m`: Análisis del ranking aplicando pesos o ponderaciones en las conexiones (aristas).
-* `metodos_comparados_atp.m`: Comparación de diferentes algoritmos y métricas para determinar el ranking de los jugadores.
-* `experimento_estados_absorbentes.m`: Simulación y análisis de cadenas de Markov con estados absorbentes sobre grafos.
+He organizado los scripts de MATLAB para que sigan el orden de la investigación:
 
-### 🚲 2. Red de Carriles Bici de Sevilla
-Estudio de conectividad y accesibilidad de la red ciclista urbana.
-* `sevilla_bicis_analysisC.m`: Script de MATLAB para procesar y analizar la red de carriles bici de Sevilla utilizando la matriz de adyacencia referida a las calles.
-* `sevilla_bicis_analysisN.m`: Script de MATLAB para procesar y analizar la red de carriles bici de Sevilla utilizando la matriz de adyacencia referida a los nodos.
-* `AyudaVisualCarrilesBicis.pdf`: Documento PDF pintado para entender el análisis realizado.
+### 🎾 1. Análisis del Ranking ATP
+En este bloque estudio la red de enfrentamientos del tenis profesional masculino desde el año 2000 hasta el 2024.
 
-### 📊 3. Modelos de Grafos y Experimentos Generales
-Modelos matemáticos y simulación de procesos sobre redes.
-* `LPIM.m`: Matriz LPIM sacada de `AyudaVisualCarrilesBicis.pdf`
-* `grafoPPAM.m`: Generación del grafo basado en el modelo sevilla_bicis_analysisC.m
-* `grafoLLAM.m`: Generación del grafo basado en el modelo sevilla_bicis_analysisN.m
-* `PPAMLLAM.m`: Script donde se saca las matrices de adyacencia PPAM Y LLAM a partir de LPIM.
-* `imagengrafoD.jpg`: Imagen exportada que muestra la visualización de uno de los grafos resultantes.
+* **`atp_ranking_analisis.m`**: Script principal que construye el grafo de jugadores y calcula el ranking de prestigio estándar.
+* **`atp_ranking_analisisponderado.m`**: Una versión avanzada donde cada victoria se pesa según el diferencial de puntos del partido, permitiendo un análisis más profundo de la dominancia de cada jugador.
+* **`metodos_comparados_atp.m`**: Comparativa entre tres modelos: Perron-Frobenius, PageRank ($\alpha=0.85$) y el Método de Keener, analizando cómo varía el Top 10 según el algoritmo.
+* **`experimento_estados_absorbentes.m`**: Simulación para comprobar la robustez de la red frente a nodos sumideros (jugadores invictos) y cómo el algoritmo corrige estas anomalías.
+* **`grafo_atp.m`**: Script dedicado a la generación de gráficos, creando representaciones visuales del flujo de prestigio entre los mejores jugadores.
+
+### 🚲 2. Red de Carriles Bici (Sevilla)
+*(Próximamente)* Análisis de centralidad aplicado a la red de movilidad ciclista de la ciudad de Sevilla.
 
 ---
 
-## 🛠️ Requisitos
-
-Para poder ejecutar estos scripts, necesitarás:
-* **MATLAB** (Se recomienda una versión reciente).
-  
+**Autora:** Tesa Chacón  
+**Grado en Matemáticas**
