@@ -24,5 +24,7 @@ Análisis de centralidad aplicado a la red de movilidad ciclista de la ciudad de
 * **`grafo_LLAM.m y grafo_PPAM`**: Scripts para generar la representación topológica de ambos grafos, destacando nodos críticos (como el Nodo Exterior) y facilitando la interpretación visual de la red.
 * **`AyudaVisualCarrilesBicis.pdf`**: Esquema propio que me ha servido para construir con más facilidad la matriz LPIM.
 * NOTA: PRIMERO EJECUTAR LPIM, LUEGO PPAMLLAM Y MÁS TARDE, LOS DEMÁS ARCHIVOS.
+
+  
 **Autora:** Tesa Chacón  
 **Grado en Matemáticas**
