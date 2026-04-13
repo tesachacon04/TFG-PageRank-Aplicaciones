@@ -26,5 +26,5 @@ Análisis de centralidad aplicado a la red de movilidad ciclista de la ciudad de
 * NOTA: PRIMERO EJECUTAR LPIM, LUEGO PPAMLLAM Y MÁS TARDE, LOS DEMÁS ARCHIVOS.
 
   
-**Autora:** Tesa Chacón  
+**Autora:** Teresa Chacón Gil 
 **Grado en Matemáticas**
