@@ -60,8 +60,10 @@ e = ones(N, 1);
 
 fprintf('Iniciando proceso iterativo de convergencia...\n');
 for i = 1:max_iter
-    % Manejo de nodos colgantes para evitar la fuga de prestigio en el sistema
-    reparto_invictos = sum(r) - sum(P * r); 
+    % CORRECCION DE NODOS COLGANTES (Dangling Nodes):
+    % Se calcula la pérdida de masa de probabilidad debida a jugadores invictos (nunca han perdido un partido) 
+    % (columnas de ceros en P) para redistribuirla y mantener la estocasticidad.
+    reparto_invictos = sum(r) - sum(P * r); %calcula cuánta importancia se ha perdido en esa iteración debido a los jugadores que no tienen derrotas
     
     % Aplicación de la ecuación de PageRank: Estructura real + Salto aleatorio
     r_nuevo = alpha * (P * r + reparto_invictos * (e/N)) + (1 - alpha) * (e / N);
