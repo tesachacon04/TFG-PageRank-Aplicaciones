@@ -8,7 +8,7 @@ He organizado los scripts de MATLAB para que sigan el orden de la investigación
 
 ### 🎾 1. Análisis del Ranking ATP
 En este bloque estudio la red de enfrentamientos del tenis profesional masculino desde el año 2000 hasta el 2024.
-
+* **`atp_matches_2000-2024`**: Datos recogidos de https://github.com/JeffSackmann/tennis_atp. Están en formato zip. Es conveniente descargar antes de ejecutar los programas.
 * **`atp_ranking_analisis.m`**: Script principal que construye el grafo de jugadores y calcula el ranking de prestigio estándar.
 * **`atp_ranking_analisisponderado.m`**: Una versión avanzada donde cada victoria se pesa según el diferencial de puntos del partido, permitiendo un análisis más profundo de la dominancia de cada jugador.
 * **`metodos_comparados_atp.m`**: Comparativa entre tres modelos: Perron-Frobenius, PageRank ($\alpha=0.85$) y el Método de Keener, analizando cómo varía el Top 10 según el algoritmo.
