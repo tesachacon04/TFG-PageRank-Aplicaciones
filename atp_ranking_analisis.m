@@ -1,6 +1,6 @@
 
 %% 1. EXTRACCIÓN Y PREPROCESAMIENTO DE DATOS
-% Se cargan los registros históricos de la ATP para definir el universo de nodos (jugadores)
+% Se cargan los registros históricos de la ATP para definir los nodos (jugadores)
 archivos = dir('atp_matches_*.csv');
 numero_archivos = length(archivos);
 todos_los_jugadores = string([]); 
