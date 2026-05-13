@@ -11,7 +11,7 @@ En este bloque estudio la red de enfrentamientos del tenis profesional masculino
 * **`atp_matches_2000-2024`**: Datos recogidos de https://github.com/JeffSackmann/tennis_atp. Están en formato zip. Es conveniente descargar antes de ejecutar los programas.
 * **`atp_ranking_analisis.m`**: Script principal que construye el grafo de jugadores y calcula el ranking de prestigio estándar.
 * **`atp_ranking_analisisponderado.m`**: Una versión avanzada donde cada victoria se pesa según el diferencial de puntos del partido, permitiendo un análisis más profundo de la dominancia de cada jugador.
-* **`metodos_comparados_atp.m`**: Comparativa entre tres modelos: Perron-Frobenius, PageRank ($\alpha=0.85$) y el Método de Keener, analizando cómo varía el Top 10 según el algoritmo.
+* **`metodos_comparados_atp.m`**: Comparativa entre tres modelos: Perron-Frobenius, PageRank ($\alpha=0.85$) y el Método de Keener, analizando cómo varía el Top 10 según el algoritmo. Ejecutar después del script **`atp_ranking_analisis.m`**.
 * **`experimento_estados_absorbentes.m`**: Simulación para comprobar la robustez de la red frente a nodos sumideros (jugadores invictos) y cómo el algoritmo corrige estas anomalías.
 * **`grafo_atp.m`**: Script dedicado a la generación de gráficos, creando representaciones visuales del flujo de prestigio entre los mejores jugadores. Antes de ejecutar este script, se debe ejecutar **`atp_ranking_analisis.m`**, **`atp_ranking_analisisponderado.m`** y **`metodos_comparados_atp.m`** para que no haya problema.
 
