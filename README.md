@@ -13,7 +13,7 @@ En este bloque estudio la red de enfrentamientos del tenis profesional masculino
 * **`atp_ranking_analisisponderado.m`**: Una versión avanzada donde cada victoria se pesa según el diferencial de puntos del partido, permitiendo un análisis más profundo de la dominancia de cada jugador.
 * **`metodos_comparados_atp.m`**: Comparativa entre tres modelos: Perron-Frobenius, PageRank ($\alpha=0.85$) y el Método de Keener, analizando cómo varía el Top 10 según el algoritmo.
 * **`experimento_estados_absorbentes.m`**: Simulación para comprobar la robustez de la red frente a nodos sumideros (jugadores invictos) y cómo el algoritmo corrige estas anomalías.
-* **`grafo_atp.m`**: Script dedicado a la generación de gráficos, creando representaciones visuales del flujo de prestigio entre los mejores jugadores.
+* **`grafo_atp.m`**: Script dedicado a la generación de gráficos, creando representaciones visuales del flujo de prestigio entre los mejores jugadores. Antes de ejecutar este script, se debe ejecutar **`atp_ranking_analisis.m`**, **`atp_ranking_analisisponderado.m`** y **`metodos_comparados_atp.m`** para que no haya problema.
 
 ### 🚲 2. Red de Carriles Bici (Sevilla)
 Análisis de centralidad aplicado a la red de movilidad ciclista de la ciudad de Sevilla. Aquí se cuantifica la centralidad de los distintos elementos de la red ciclista, observando cómo se altera el flujo base al introducir las estaciones de SEVici.
